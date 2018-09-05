@@ -1,8 +1,22 @@
+/* style pour toutes les pages des documents */
 body{
-    font-family: georgia, serif;
-
+    background: center no-repeat url("../image/fond.jpg");
 }
-
 h1{
-    underline;
+    background-color:midnightblue;
+    color:white;
+    text-align: center;
 }
+
+h2,h3,h4,h5,h6{
+    color:dodgerblue;
+    font-size:large;
+    font-family: "Comic Sans MS";
+}
+
+p{
+    color: navy;
+}
+
+
+
