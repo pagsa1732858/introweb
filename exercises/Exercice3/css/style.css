@@ -6,13 +6,15 @@ body {
 h1{
     text-align: center;
     border: 5px solid olivedrab;
+
 }
 .box {
-
+    float:left;
 	border: 2px solid darkblue;
 	padding-left: 10px;
 }
 .box2 {
+    float:right;
   border: 2px solid red;
 }
 
