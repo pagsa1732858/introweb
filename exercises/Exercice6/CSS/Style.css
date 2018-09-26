@@ -1,20 +1,38 @@
 .form-style{
-    max-width: 500px;
+    max-width: 400px;
     padding: 20px 12px 10px 20px;
     font: 13px Arial, Helvetica, sans-serif;
 }
 .Entete{
     font-weight: bold;
     font-style: italic;
-    border-bottom: 2px solid #ddd;
+    border-bottom: 2px solid cyan;
     margin-bottom: 10px;
-    font-size: 15px;
+    font-size: 20px;
     padding-bottom: 3px;
 }
+body{
+background:center no-repeat url("http://www.diego-suarez-immobilier.com/wp-content/uploads/2017/06/fond-site-diana-diego.jpg");
+}
+div{
+    text-align:right;
 
-label, input, select{
-    text-align:center;
-    display:block;
+
+}
+label{
+
+    font-size: 16px;
+
+}
+input{
+    margin: 10px ;
+
+}
+input[type=submit],[type=submit]{
+    background-color: mediumspringgreen;
+    width:100px;
 }
 
+div,form-style{
 
+}
