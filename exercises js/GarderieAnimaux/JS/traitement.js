@@ -1,8 +1,8 @@
 function btnCalculer_onclick()
 {
-    var nbrJr,vete,chien,chat,tarif,animal,rabais,serT,nbHeure,tauxH;
+    var nbrJr,vete,tarif,rabais,serT,nbHeure,tauxH;
 
-    vete = parseInt(document.getElementById("lstVeterinaire").check);
+    vete = document.getElementById("lstVeterinaire").value;
     nbrJr = parseInt(document.getElementById("txtNbreJours").value);
     nbHeure = parseInt(document.getElementById("txtHeure").value);
 
@@ -51,16 +51,28 @@ function btnCalculer_onclick()
     }
     switch(vete)
     {
-        case "Audrey Bouchard":
+        case "Audrey Bouchard" :
             tauxH=25;
+            break;
+        case "Stéphane Tremblay" :
+            tauxH=30;
+            break;
+        case "Maxime Simard" :
+            tauxH=35;
+            break;
+        case "Mélissa Caron" :
+            tauxH=40;
             break;
     }
 
-
+ tauxH = tauxH*nbHeure;
     rabais=tarif-(tarif*rabais/100);
-    console.log("votre tarif pour la garderie est de:"+tarif);
-    console.log("votre prix avec le rabais est:"+rabais);
-    console.log("le veterinaire a un taux horaire de:"+tauxH);
+
+
+    document.getElementById("lblMessage").innerHTML ="votre tarif pour la garderie est de:"+tarif+" votre prix avec le rabais est:"+rabais+ " le prix pour les heures du veterinaire est:"+tauxH;
+
+
+
 }
 
 
